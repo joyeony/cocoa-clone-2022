@@ -1,3 +1,3 @@
-# Cocoa Clone 2023 Update
+# Cocoa Clone 2022 Update
 
-Cocoa Clone 2023 by only using HTML & CSS!
+Cocoa Clone 2022 by only using HTML & CSS!
