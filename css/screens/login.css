@@ -1,0 +1,82 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+.welcome-header {
+    margin-top: 95px;
+    text-align: center;
+    /* since it is text, we can youse text-align */
+    /* I divided __text usinb <br> but nico did with flex-direction: column; so that items cannot be next to each other */
+}
+
+.welcome-header__title {
+    margin-bottom: 40px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.welcome-header__text {
+    /* If I used the flex-direction: column;, can adjust the size with `width` */
+    opacity: 0.7;
+    margin-bottom: 48px;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+}
+
+#login-form input {
+    border: none;
+    padding: 15px 0px;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 25px;
+    transition: border-color 0.3s ease-in-out;
+  }
+
+#login-form input:focus {
+    outline: none;
+    border-color: var(--yellow);
+  }
+
+/* Placeholder is input property, so need to set CSS seperately */
+#login-form input::placeholder {
+    color: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#login-form input:focus::placeholder {
+    color: var(--yellow);
+}
+
+#login-form input[type="submit"] {
+    color: rgba(0,0,0,0.8);
+}
+
+#login-form input[value="Log In"] {
+    margin: 5px 0px 10px 0;
+    background-color: var(--yellow);
+}
+
+#login-form input:hover[value="Log In"] {
+    background-color: #fde36d;
+}
+
+/* 
+#login-form input[value="Sign Up"] {
+    pointer-events: auto;
+} */
+
+#login-form a {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    opacity: 0.6;
+}
+
+/* Choose between .class__sth or #ID sth
+ex) login-form__input */

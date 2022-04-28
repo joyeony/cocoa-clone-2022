@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css"
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Cocoa Talk</title>
+</head>
+<body>
+    <div class="status-bar"> 
+        <div class="status-bar__column">
+            <span>No service</span>
+            <img src="img/wifi-slash-32.png" width="15" height="16">
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>100%</span>
+            <i class="fa-solid fa-battery-full fa-lg"></i>
+            <i class="fa-solid fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">Welcome to Cocoa Clone</h1>
+        <p class="welcome-header__text">If you have a Cocoa Account,<br>log in with your email or phone number.</p>
+    </header>
+
+    <form action="friends.html" method="get" id="login-form">
+        <input required name="username" type="text" placeholder="Email or phone number" />
+        <input name="password" type="password" placeholder="Password" />
+        <input type="submit" value="Log In" />
+        <input title="Sorry! Can't available for the moment." type="submit" value="Sign Up" />
+        <a title="Sorry! Can't available for the moment." href="#">Find Cocoa Account or Password</a>
+    </form>
+
+    <script src="https://kit.fontawesome.com/bcbd49c57c.js" crossorigin="anonymous"></script>
+</body>
+</html>
